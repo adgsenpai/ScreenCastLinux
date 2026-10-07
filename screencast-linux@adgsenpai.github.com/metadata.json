@@ -1,0 +1,9 @@
+{
+  "uuid": "screencast-linux@adgsenpai.github.com",
+  "name": "ScreenCast Linux",
+  "description": "Quick Settings toggle to mirror and control your Android phone on the desktop with scrcpy — over USB or Wi-Fi (wireless ADB).",
+  "shell-version": ["46", "47", "48", "49", "50"],
+  "settings-schema": "org.gnome.shell.extensions.screencast-linux",
+  "url": "https://github.com/adgsenpai/ScreenCastLinux",
+  "version": 1
+}

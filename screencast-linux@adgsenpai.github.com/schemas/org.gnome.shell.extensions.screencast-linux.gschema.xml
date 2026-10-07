@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.screencast-linux" path="/org/gnome/shell/extensions/screencast-linux/">
+    <key name="connection-mode" type="s">
+      <choices><choice value="usb"/><choice value="wifi"/></choices>
+      <default>'usb'</default>
+      <summary>How to connect to the phone</summary>
+    </key>
+    <key name="wifi-address" type="s">
+      <default>''</default>
+      <summary>Phone IP address for wireless ADB</summary>
+    </key>
+    <key name="wifi-port" type="i">
+      <range min="1" max="65535"/>
+      <default>5555</default>
+      <summary>Wireless ADB port</summary>
+    </key>
+    <key name="turn-screen-off" type="b">
+      <default>false</default>
+      <summary>Turn the phone screen off while mirroring</summary>
+    </key>
+    <key name="stay-awake" type="b">
+      <default>true</default>
+      <summary>Keep the phone awake while mirroring</summary>
+    </key>
+    <key name="audio" type="b">
+      <default>true</default>
+      <summary>Forward phone audio (scrcpy 2.0+)</summary>
+    </key>
+    <key name="record" type="b">
+      <default>false</default>
+      <summary>Record the session to ~/Videos</summary>
+    </key>
+    <key name="fullscreen" type="b">
+      <default>false</default>
+      <summary>Start the mirror window fullscreen</summary>
+    </key>
+    <key name="max-size" type="i">
+      <range min="0" max="4096"/>
+      <default>0</default>
+      <summary>Maximum width/height of the mirror in pixels (0 = native)</summary>
+    </key>
+    <key name="bit-rate" type="i">
+      <range min="1" max="100"/>
+      <default>8</default>
+      <summary>Video bit rate in Mbps</summary>
+    </key>
+    <key name="scrcpy-path" type="s">
+      <default>''</default>
+      <summary>Custom path to scrcpy (empty = search PATH)</summary>
+    </key>
+    <key name="adb-path" type="s">
+      <default>''</default>
+      <summary>Custom path to adb (empty = search PATH)</summary>
+    </key>
+    <key name="extra-args" type="s">
+      <default>''</default>
+      <summary>Extra command-line arguments passed to scrcpy</summary>
+    </key>
+  </schema>
+</schemalist>
